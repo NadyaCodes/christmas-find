@@ -6,10 +6,10 @@ html {
   justify-content: center; */
 }
 .tree {
-  max-height: 80vh;
+  height: 80vh;
   max-width: 80vw;
   padding-top: 2rem;
-  position: absolute;
+  position: fixed;
   margin-left: auto;
   margin-right: auto;
   left: 0;
@@ -17,6 +17,16 @@ html {
 }
 
 .grid {
+  padding-top: 2rem;
+  border: 2px solid red;
+  height: 80vh;
+  max-width: 80vw;
+  position: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  /* position: absolute; */
   /* position: absolute;
   padding-top: 3rem;
   margin-left: auto;
@@ -24,6 +34,10 @@ html {
   left: 0;
   right: 0;
   text-align: center; */
+}
+
+.hiding-container {
+  position: relative;
 }
 
 .box {
@@ -37,12 +51,20 @@ html {
 }
 
 .star-hide {
-  margin-top: 3rem;
+  top: 3vh;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
   text-align: center;
+}
+
+.pot-hide {
+  top: 70vh;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
 }
 
 .hidden {
