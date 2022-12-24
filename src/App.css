@@ -32,6 +32,9 @@ html {
   height: 2px;
   position: absolute;
 }
+.box:hover {
+  cursor: pointer;
+}
 
 .star-hide {
   margin-top: 3rem;
@@ -40,4 +43,30 @@ html {
   left: 0;
   right: 0;
   text-align: center;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.frog {
+  animation: frog-appear 2s linear;
+  margin-top: 40vh;
+  max-width: 80%;
+}
+
+@keyframes frog-appear {
+  0% {
+    transform: translate(35vw, -55vh) scale(10%) rotate(-25deg);
+  }
+  20% {
+    transform: translate(10vw, -65vh) scale(30%) rotate(-15deg);
+  }
+  100% {
+    transform: translate(0rem, 0rem) scale(100%) rotate(0deg)
+  }
 }
