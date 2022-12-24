@@ -2,10 +2,41 @@ html {
   background-color: rgb(226, 253, 244);
 }
 .App {
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
 }
 .tree {
   max-height: 80vh;
+  max-width: 80vw;
   padding-top: 2rem;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  /* text-align: center; */
+  /* align-self: center; */
+}
+
+.grid {
+  /* position: absolute;
+  padding-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center; */
+}
+
+.box {
+  border: 1px solid black;
+  width: 2px;
+  height: 2px;
+  position: absolute;
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
