@@ -14,8 +14,6 @@ html {
   margin-right: auto;
   left: 0;
   right: 0;
-  /* text-align: center; */
-  /* align-self: center; */
 }
 
 .grid {
@@ -33,6 +31,9 @@ html {
   width: 2px;
   height: 2px;
   position: absolute;
+}
+
+.star-hide {
   margin-top: 3rem;
   margin-left: auto;
   margin-right: auto;
