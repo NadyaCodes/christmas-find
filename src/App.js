@@ -5,12 +5,20 @@ import Presents from "./Presents";
 import { useState } from "react";
 
 function App() {
-  const [visible, setVisible] = useState({ star: false, pot: false });
+  const [visible, setVisible] = useState({
+    star: false,
+    pot: false,
+    rightBranch: false,
+    leftBranch: false,
+    midBranch: false,
+  });
 
   return (
     <div className="App">
-      <Tree />
-      <Grid visible={visible} setVisible={setVisible} />
+      <div className="play-container">
+        <Tree />
+        <Grid visible={visible} setVisible={setVisible} />
+      </div>
       <Presents visible={visible} setVisible={setVisible} />
     </div>
   );

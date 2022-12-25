@@ -24,6 +24,18 @@ export default function Grid(props) {
           className="box pot-hide"
           onClick={() => setVisible({ ...visible, pot: true })}
         ></div>
+        <div
+          className="box right-hide"
+          onClick={() => setVisible({ ...visible, rightBranch: true })}
+        ></div>
+        <div
+          className="box left-hide"
+          onClick={() => setVisible({ ...visible, leftBranch: true })}
+        ></div>
+        <div
+          className="box mid-hide"
+          onClick={() => setVisible({ ...visible, midBranch: true })}
+        ></div>
         {/* <div>
           <img
             src={frog}

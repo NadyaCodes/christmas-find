@@ -5,27 +5,53 @@ html {
   /* display: flex;
   justify-content: center; */
 }
-.tree {
-  height: 80vh;
-  max-width: 80vw;
+
+.play-container {
+  height: 37rem;
+  width: 30rem;
   padding-top: 2rem;
-  position: fixed;
+  display: flex;
+  justify-content: center;
+}
+.tree {
+  height: inherit;
+  width: inherit;
+  position: absolute;
+  /* width: inherit; */
+  /* height: 80vh; */
+  /* padding-top: 2rem; */
   margin-left: auto;
   margin-right: auto;
   left: 0;
-  right: 0;
+right: 0;
+  /* justify-self: center; */
+  /* position: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0; */
 }
 
 .grid {
-  padding-top: 2rem;
+  /* padding-top: 2rem; */
   border: 2px solid red;
-  height: 80vh;
-  max-width: 80vw;
-  position: fixed;
+  /* position:relative; */
+  /* position: absolute; */
+  position: absolute;
+  width: inherit;
+  height: inherit;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
+  /* width: 50%; */
+  /* height: 80vh; */
+  /* width: 80vw; */
+  /* position: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0; */
   /* position: absolute; */
   /* position: absolute;
   padding-top: 3rem;
@@ -37,14 +63,22 @@ html {
 }
 
 .hiding-container {
-  position: relative;
-  border: 2px solid purple;
+  /* position: relative;
+  height: 80vh; */
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  border: 5px solid purple;
 }
 
 .box {
   border: 1px solid black;
-  width: 2px;
-  height: 2px;
+  width: 5px;
+  height: 5px;
   position: absolute;
 }
 .box:hover {
@@ -52,20 +86,49 @@ html {
 }
 
 .star-hide {
-  top: 3vh;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  top: 1rem;
+  /* top: 3vh;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
-  text-align: center;
+  text-align: center; */
 }
 
 .pot-hide {
-  top: 70vh;
+  /* top: 70vh;
   margin-left: auto;
   margin-right: auto;
   left: 0;
-  right: 0;
+  right: 0; */
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  top: 35rem;
+}
+
+.right-hide {
+  position: relative;
+  margin-left: auto;
+  margin-right: 4rem;
+  top: 23rem;
+}
+
+.left-hide {
+  position: relative;
+  margin-left: 4rem;
+  margin-right: auto;
+  top: 23rem;
+}
+
+.mid-hide {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  top: 15rem;
 }
 
 .hidden {
