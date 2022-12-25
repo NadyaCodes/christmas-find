@@ -9,7 +9,7 @@ html {
 .play-container {
   height: 37rem;
   width: 30rem;
-  padding-top: 2rem;
+  /* padding-top: 2rem; */
   display: flex;
   justify-content: center;
 }
@@ -34,7 +34,7 @@ html {
 
 .grid {
   /* padding-top: 2rem; */
-  border: 2px solid red;
+  /* border: 2px solid red; */
   /* position:relative; */
   /* position: absolute; */
   position: absolute;
@@ -72,17 +72,19 @@ html {
   margin-right: auto;
   left: 0;
   right: 0;
-  border: 2px solid purple;
+  /* border: 2px solid purple; */
 }
 
 .box {
-  border: 1px solid black;
-  width: 5px;
-  height: 5px;
+  /* border: 1px solid black; */
+  width: 30px;
+  height: 30px;
   position: absolute;
+  border-radius: .25rem;
 }
 .box:hover {
   cursor: pointer;
+  background-color: rgba(44, 232, 129, 0.539);
 }
 
 .star-hide {
@@ -90,45 +92,35 @@ html {
   margin-left: auto;
   margin-right: auto;
   top: 1rem;
-  /* top: 3vh;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  text-align: center; */
 }
 
 .pot-hide {
-  /* top: 70vh;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0; */
+
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  top: 35rem;
+  top: 30rem;
 }
 
 .right-hide {
   position: relative;
   margin-left: auto;
   margin-right: 4rem;
-  top: 23rem;
+  top: 18rem;
 }
 
 .left-hide {
   position: relative;
   margin-left: 4rem;
   margin-right: auto;
-  top: 23rem;
+  top: 18rem;
 }
 
 .mid-hide {
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  top: 15rem;
+  top: 5rem;
 }
 
 .hidden {
@@ -142,25 +134,21 @@ html {
 
 
 .presents-container {
- border: 2px solid blueviolet;
+ border: 5px solid rgb(0, 92, 41);
+ border-radius: .2rem;
  display: flex;
- /* justify-content: center; */
+
  width: 28rem;
- height: 5rem;
- /* position: relative; */
- /* position: fixed; */
- /* bottom: 0;
- width: 80vw;
- height: 15vh;
- margin-right: auto;
- margin-left: auto;
-left: 0;
-right: 0; */
+ height: 7rem;
+ margin-top: .5rem;
 margin-left: auto;
 margin-right: auto;
+padding-left: 1rem;
+padding-top: .1rem;
+/* background-color: #F9F9F9; */
 }
 .present {
-  /* border: 2px solid cyan; */
+
   width: 19%;
   animation: drop 1s linear 1
 }
@@ -187,37 +175,41 @@ margin-right: auto;
 }
 
 .frog {
-  /* animation: frog-appear 1s linear; */
-  /* margin-top: 40vh; */
   max-width: 20%;
   display: flex;
   border: 2px solid blue;
   bottom: 0
-  /* position: absolute; */
-  /* bottom: 0; */
 }
 
 .christmas {
   position: fixed;
-  top: 0;
+  top: 10rem;
   bottom: 0;
   left: 0;
   right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 40vh;
   background-color: rgb(193, 1, 1);
   color: black;
+  font-size: 10rem;
+  animation: none;
+  font-family: 'Brush Script MT', cursive;
 }
 
+button {
+  width: 8rem;
+  height: 4rem;
+  font-size: 2rem;
+  border-radius: .25rem;
+  margin: 2rem;
+  background-color: transparent;
+  color: rgb(0, 92, 41)
+}
 
-/* @keyframes frog-appear {
-  0% {
-    transform: translate(25vw, -45vh) scale(10%) rotate(-25deg);
-  }
-  20% {
-    transform: translate(10vw, -55vh) scale(30%) rotate(-15deg);
-  }
-  100% {
-    transform: translate(0rem, 0rem) scale(100%) rotate(0deg)
-  }
-} */
+button:hover {
+ background-color: rgb(0, 92, 41);
+ color: rgb(226, 253, 244)
+}

@@ -1,6 +1,4 @@
 import React from "react";
-import frog from "./frog-face-cute.png";
-import { useState } from "react";
 
 export default function Grid(props) {
   const { visible, setVisible } = props;
