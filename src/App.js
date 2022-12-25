@@ -19,6 +19,9 @@ function App() {
     presents: [frog, bee, cat, dog, daisy],
   });
 
+  const values = Object.values(visible);
+  const trues = values.filter((value) => value === true);
+
   // console.log(props.visible);
 
   // const presents = [frog, bee, cat, dog, daisy];
@@ -58,6 +61,12 @@ function App() {
 
   return (
     <div className="App">
+      {trues.length === 0 && (
+        <section className="title">
+          <h1>Find the gifts hidden in the tree!</h1>
+        </section>
+      )}
+
       <button onClick={() => resetTree()}>Reset</button>
       <div className="play-container">
         <Tree />
