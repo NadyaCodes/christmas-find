@@ -23,7 +23,7 @@ html {
   margin-left: auto;
   margin-right: auto;
   left: 0;
-right: 0;
+  right: 0;
   /* justify-self: center; */
   /* position: fixed;
   margin-left: auto;
@@ -72,7 +72,7 @@ right: 0;
   margin-right: auto;
   left: 0;
   right: 0;
-  border: 5px solid purple;
+  border: 2px solid purple;
 }
 
 .box {
@@ -139,21 +139,28 @@ right: 0;
   visibility: visible;
 }
 
+
+
 .presents-container {
  border: 2px solid blueviolet;
  display: flex;
- position: fixed;
- bottom: 0;
+ width: 30rem;
+ height: 5rem;
+ /* position: relative; */
+ /* position: fixed; */
+ /* bottom: 0;
  width: 80vw;
  height: 15vh;
  margin-right: auto;
  margin-left: auto;
 left: 0;
-right: 0;
+right: 0; */
+margin-left: auto;
+margin-right: auto;
 }
 .present {
   border: 2px solid cyan;
-  width: 20%;
+  width: 25%;
 }
 .present-image {
   max-width: 90%;
