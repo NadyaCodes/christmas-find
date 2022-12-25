@@ -15,6 +15,19 @@ function App() {
 
   return (
     <div className="App">
+      <button
+        onClick={() =>
+          setVisible({
+            star: false,
+            pot: false,
+            rightBranch: false,
+            leftBranch: false,
+            midBranch: false,
+          })
+        }
+      >
+        Reset
+      </button>
       <div className="play-container">
         <Tree />
         <Grid visible={visible} setVisible={setVisible} />

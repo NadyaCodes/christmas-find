@@ -1,5 +1,6 @@
 import React from "react";
 import frog from "./frog-face-cute.png";
+import Christmas from "./Christmas";
 
 export default function Presents(props) {
   console.log(props.visible);
@@ -17,6 +18,7 @@ export default function Presents(props) {
           key={index}
           className="present-image"
         />
+        {trues.length === 5 && <Christmas />}
       </div>
     );
   });
